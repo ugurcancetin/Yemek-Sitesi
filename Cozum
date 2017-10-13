@@ -1,0 +1,12 @@
+Sign in butonundaki cozum icin :
+
+Burada ki if kontrolunu (indexRoutes.js dosyasinin icerisinde ve kaydol istegindeki) 
+ if(err){
+            req.flash("error", err.message);
+            return res.render("kaydol");
+        }
+
+Burada ki gibi degistirmeniz yeterli olucaktir.
+ if(err){
+      return res.render("kaydol", {"error": err.message});
+    }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bizim Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/stylesheets/main.css">
+	<link rel="stylesheet" href="/stylesheets/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+	
+			<% if(error && error.length > 0){ %>
+			<div class="alert alert-danger" role="alert">
+					<h1><%= error %></h1>
+			</div>
+			<% } %>
+
+			<% if(success && success.length > 0){ %>
+			<div class="alert alert-success" role="alert">
+					<h1><%= success %></h1>
+			</div>
+			<% } %>
+	</div>
+
+
+	<h1 >Saygılarımızla</h1>
+	<h4 >Bizim Restuaranta Hosgeldiniz...</h4>
+	
+	<a id="benimButon" class="btn btn-lg btn-default" href="/yemekler">Yemeklere Git</a>
+
+
+
+<% include partials/footer %>
